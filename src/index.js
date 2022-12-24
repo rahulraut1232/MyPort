@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './component/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const Welcome=()=>
+{ 
+        return <h1>Hello Nikhil!</h1> 
+} 
 root.render(
   <React.StrictMode>
-    <App />
+    <Welcome />
+    <App/>
   </React.StrictMode>
 );
 
