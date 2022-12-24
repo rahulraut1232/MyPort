@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import App from './component/App';
+import Signin from './component/signin';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Header from './component/header';
+import Navbar from './component/navbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const Welcome=()=>
-{ 
-        return <h1>Hello Nikhil!</h1> 
-} 
+
 root.render(
   <React.StrictMode>
-    <Welcome />
-    <App/>
+    <Navbar/>
+    <Signin/>
   </React.StrictMode>
 );
 
